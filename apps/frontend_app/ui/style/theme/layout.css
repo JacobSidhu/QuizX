@@ -1,0 +1,9 @@
+/*This css files apply simple and very basic layout to all pages*/
+@import './typograpghy.css';
+
+*{
+    /*Setting box-sizing property*/
+    box-sizing: border-box;
+    /*Applying default styling to all pages.*/ 
+    font-family: var(--default-font-family);
+}
