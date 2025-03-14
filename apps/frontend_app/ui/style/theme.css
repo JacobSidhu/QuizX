@@ -1,0 +1,5 @@
+/*This theme.css includes the theme files used within the application.*/
+@import './theme/colors.css'; /*Imports all colors used in the app.*/
+@import './theme/typograpghy.css'; /*Includes typography for the app.*/ 
+@import './theme/layout.css'; /*Used to apply basic common layout to entire app ui.*/
+@import './theme/shape.css'; /*This file included to include special shapes or properties to app.*/
