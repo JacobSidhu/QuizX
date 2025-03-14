@@ -1,0 +1,16 @@
+/*This css files imcludes the typography used within the frontend_app.*/
+/*Properties are application specific.*/
+:root{
+
+    /* Default font style or family*/ 
+    --default-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ---- Font sizes ---- */
+    --display-small-font-size: 36px;
+    --label-large-font-size: 14px;
+ 
+    /* ---- Font weight ---- */
+    --display-small-font-weight: 700;
+    --label-large-font-weight: 600;
+
+}
