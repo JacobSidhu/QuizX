@@ -1,1 +1,1 @@
-![Run Prototype](https://www.figma.com/design/uACjBzdh39PqogREFK5haE/version-1.0.0?node-id=147-460&t=QWWLnohsGqn242Ph-1)
+[Run Prototype](https://www.figma.com/design/uACjBzdh39PqogREFK5haE/version-1.0.0?node-id=147-460&t=QWWLnohsGqn242Ph-1)
