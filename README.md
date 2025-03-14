@@ -17,16 +17,16 @@ The system is designed to simulate real-world industry practices where developer
 
 ### 🎯 Grading Options
 
-![software solution 01](https://drive.google.com/file/d/1oYypaklwABKi6kH0jdkVnZEwUUOoMcOQ/view?usp=drive_link)
+![software solution 01](https://drive.google.com/file/d/1oYypaklwABKi6kH0jdkVnZEwUUOoMcOQ/view?usp=sharing)
 | Option 1 | Third Class | Minimal distributed system with basic resilience |
 
-![software solution 02](https://drive.google.com/file/d/1bUVb6wtx4pDpV7mYo1P86lVH1mO1__7T/view?usp=drive_link)
+![software solution 02](https://drive.google.com/file/d/1bUVb6wtx4pDpV7mYo1P86lVH1mO1__7T/view?usp=sharing)
 | Option 2 | 2:2 (Lower Second Class) | Microservices + Asynchronous messaging |
 
-![software solution 03](https://drive.google.com/file/d/158KBU2f2i8ZFOZroa7mJ_5Jh0ONEiV4A/view?usp=drive_link)
+![software solution 03](https://drive.google.com/file/d/158KBU2f2i8ZFOZroa7mJ_5Jh0ONEiV4A/view?usp=sharing)
 | Option 3 | 2:1 (Upper Second Class) | API Gateway + Rate limiting |
 
-![software solution 04](https://drive.google.com/file/d/1ZRQ-5psZ8wSTOiRsFUaJc96ntkK2pAWk/view?usp=drive_link)
+![software solution 04](https://drive.google.com/file/d/1ZRQ-5psZ8wSTOiRsFUaJc96ntkK2pAWk/view?usp=sharing)
 | Option 4 | First Class | Moderation microservice + Multiple databases + Authentication |
 
 ---
