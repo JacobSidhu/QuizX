@@ -14,27 +14,55 @@ The goal is to design, implement, test, and deploy a **Multiple-Choice Question-
 The system is designed to simulate real-world industry practices where developers implement high-level architectural designs provided by solution architects.
 
 ### 🎯System Architecture
+![Choosen Architecture](https://drive.google.com/uc?export=view&id=1ZRQ-5psZ8wSTOiRsFUaJc96ntkK2pAWk)
 
-### 🎯 Grading Options
 
-![software solution 01](https://drive.google.com/uc?export=view&id=1oYypaklwABKi6kH0jdkVnZEwUUOoMcOQ)
+
+### 🎯 Grading Options and  🔍 Detailed Description of the Project
+
+### 🟢 Option 1: Third Class
+
 | Option 1 | Third Class | Minimal distributed system with basic resilience |
 
-![software solution 02](https://drive.google.com/uc?export=view&id=1bUVb6wtx4pDpV7mYo1P86lVH1mO1__7T)
+- **Question Application**: Displays a random question and answers  
+- **Submit Application**: Allows users to add new questions/categories  
+- **Database**: MySQL or MongoDB  
+- **Deployment**: Docker containers on an Azure VM  
+- **Feature**: Basic resilience
+![software solution 01](https://drive.google.com/uc?export=view&id=1oYypaklwABKi6kH0jdkVnZEwUUOoMcOQ)
+
+
+### 🟡 Option 2: 2:2 (Lower Second Class)
+
 | Option 2 | 2:2 (Lower Second Class) | Microservices + Asynchronous messaging |
 
-![software solution 03](https://drive.google.com/uc?export=view&id=158KBU2f2i8ZFOZroa7mJ_5Jh0ONEiV4A)
+- **Microservices Architecture**
+- **Asynchronous Messaging**: RabbitMQ for question submissions  
+- **ETL Component**: Ensures DB updates even if a service is down
+![software solution 02](https://drive.google.com/uc?export=view&id=1bUVb6wtx4pDpV7mYo1P86lVH1mO1__7T)
+
+
+### 🔵 Option 3: 2:1 (Upper Second Class)
+
 | Option 3 | 2:1 (Upper Second Class) | API Gateway + Rate limiting |
 
-![software solution 04](https://drive.google.com/uc?export=view&id=1ZRQ-5psZ8wSTOiRsFUaJc96ntkK2pAWk)
+- **API Gateway (Kong)**  
+- **Single entry point for all services**
+- **Rate Limiting**
+- **HTTPS-enabled communication**
+![software solution 03](https://drive.google.com/uc?export=view&id=158KBU2f2i8ZFOZroa7mJ_5Jh0ONEiV4A)
+
+
+### 🔴 Option 4: First Class
+
 | Option 4 | First Class | Moderation microservice + Multiple databases + Authentication |
 
----
-
-
-## Choosen Architecture
+- **Moderation Microservice**: Review/approve submitted questions  
+- **Multiple Databases**: MySQL and MongoDB with env-switch  
+- **Authentication**: OpenID Connect (OIDC)
 ![software solution 04](https://drive.google.com/uc?export=view&id=1ZRQ-5psZ8wSTOiRsFUaJc96ntkK2pAWk)
 
+---
 
 ## 🔑 Key Features
 
@@ -44,33 +72,6 @@ The system is designed to simulate real-world industry practices where developer
 - **Secure Communication (HTTPS)**
 - **Authentication for Sensitive Operations**
 - **Database Flexibility**
-
----
-
-## 🔍 Detailed Description of the Project
-
-### 🟢 Option 1: Third Class
-- **Question Application**: Displays a random question and answers  
-- **Submit Application**: Allows users to add new questions/categories  
-- **Database**: MySQL or MongoDB  
-- **Deployment**: Docker containers on an Azure VM  
-- **Feature**: Basic resilience
-
-### 🟡 Option 2: 2:2 (Lower Second Class)
-- **Microservices Architecture**
-- **Asynchronous Messaging**: RabbitMQ for question submissions  
-- **ETL Component**: Ensures DB updates even if a service is down
-
-### 🔵 Option 3: 2:1 (Upper Second Class)
-- **API Gateway (Kong)**  
-- **Single entry point for all services**
-- **Rate Limiting**
-- **HTTPS-enabled communication**
-
-### 🔴 Option 4: First Class
-- **Moderation Microservice**: Review/approve submitted questions  
-- **Multiple Databases**: MySQL and MongoDB with env-switch  
-- **Authentication**: OpenID Connect (OIDC)
 
 ---
 
