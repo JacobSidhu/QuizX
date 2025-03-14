@@ -1,0 +1,35 @@
+/*These are the color design tokens.*/
+
+/*Light theme*/
+:root {
+  --md-sys-color-primary: rgb(208 188 254);
+  --md-sys-color-surface-tint: rgb(208 188 255);
+  --md-sys-color-on-primary: rgb(56 30 114);
+  --md-sys-color-primary-container: rgb(79 55 139);
+  --md-sys-color-on-primary-container: rgb(234 221 255);
+  --md-sys-color-background: rgb(16, 14, 19);
+  --md-sys-color-on-background: rgb(230 224 233);
+  --md-sys-color-surface: rgb(20 18 24);
+  --md-sys-color-on-surface: rgb(230 224 233);
+  --md-sys-color-surface-variant: rgb(73 69 79);
+  --md-sys-color-on-surface-variant: rgb(202 196 208);
+  --md-sys-color-outline: rgb(147 143 153);
+}
+
+/*Dark theme*/
+[data-theme="dark"] {
+  --md-sys-color-primary: rgb(101 85 143);
+  --md-sys-color-surface-tint: rgb(103 80 164);
+  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-primary-container: rgb(234 221 255);
+  --md-sys-color-on-primary-container: rgb(33 0 93);
+  --md-sys-color-background: rgb(224, 224, 224);
+  --md-sys-color-on-background: rgb(29 27 32);
+  --md-sys-color-surface: rgb(254 247 255);
+  --md-sys-color-on-surface: rgb(29 27 32);
+  --md-sys-color-surface-variant: rgb(231 224 236);
+  --md-sys-color-on-surface-variant: rgb(73 69 79);
+  --md-sys-color-outline: rgb(121 116 126);
+  --md-sys-color-surface-container-highest: rgb(230 224 233);
+  --correct-answer-indicator: rgb(25, 161, 0);
+}
