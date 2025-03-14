@@ -1,0 +1,24 @@
+:root { 
+    --md-sys-shape-corner-medium: 8px; 
+}
+
+/* Customizing scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #75757585;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a7a7a777;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
