@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizX</title>
+    <link rel="icon" href="/assets/logo/logo-dark.png" type="image/png">
+    <link rel="stylesheet" href="/pages/home/home.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <!-- Container for the logo and its label -->
+        <div class="splash-screen-logo-container">
+            <!-- Logo image with an alternative text for accessibility -->
+            <img id="splash-screen-logo" src="/assets/logo/logo-dark.png" alt="Logo">
+            <!-- Label or text associated with the logo -->
+            <div id="splash-screen-logo-label">QuizX</div>
+        </div>
+    </div>
+    
+    <div id="home-page" style="display: none;">
+            <!-- app bar Container -->
+        <div class="app-bar-container">
+            <!-- logo Container -->
+            <a class="logo-container" href="/pages/home/home.html">
+                <img id="logo" src="/assets/logo/logo-dark.png" alt="logo">
+                <h1 class="logo-label">QuizX</h1>
+            </a>
+            <!-- buttons Container -->
+            <div class="app-bar-button-container">
+                <md-text-button target="blank" href="https://github.com/JacobSidhu/QuizX/blob/main/README.md">Github</md-text-button>
+                <label class="themelabel">Toggle Theme</label>
+                <md-switch id="theme-switch" selected></md-switch>
+            </div>
+        </div>    <!-- closing app bar Container -->
+
+        <!-- body Container -->
+        <div class="app-interface">
+                <iframe id="interface-body" 
+                    src=""
+                    frameborder="0">
+                </iframe>
+        </div> <!-- closing body bar Container -->
+
+     <!-- Scripts -->
+    <script>
+        // Waiting for the DOM to load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Showing the splash screen for 5 seconds
+            setTimeout(function () {
+                // Hiding the splash screen
+                document.getElementById("splash-screen").style.display = "none";
+                // Showing the home page content
+                document.getElementById("home-page").style.display = "flex";
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+    <script type="module" src="/components/md_components.js"></script>
+    <script type="module" src="/pages/home/home.js"></script>
+
+    </div>
+
+</body>
+</html>
+
+
+<!-- top-bar Container -->
+        <!-- <div class="top-bar-container">
+            <div id="heading">Choose category:</div>
+            <div id="buttons-container">
+                <md-filled-button target="blank">Add New Quiz</md-filled-button>
+            </div>
+        </div>
+        <md-divider></md-divider> -->
+        <!-- top-bar Container -->
