@@ -1,0 +1,19 @@
+services:
+  mysql_host:
+    image: ${MYSQL_IMAGE}
+    container_name: mysql-server
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+      MYSQL_DATABASE: ${DATABASE}
+    ports:
+      - "${CONTAINER_PORT}:3306"
+    volumes:
+      - mysql_data_vl:/var/lib/mysql
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  mysql_data_vl:
