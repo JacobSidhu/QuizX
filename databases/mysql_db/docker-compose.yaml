@@ -9,6 +9,7 @@ services:
       - "${CONTAINER_PORT}:3306"
     volumes:
       - mysql_data_vl:/var/lib/mysql
+      # seed.sql file is required to initilise the database.
       - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
